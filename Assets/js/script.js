@@ -57,7 +57,17 @@ var generateBtn = document.querySelector("#generate"); //stores data from id #ge
 var holdArray = [];
 var passArray = [];
 
-function lengthPrompt() {
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+}
+
+//writePassword,
+// Add event listener to generate button
+generateBtn.addEventListener("click", function lengthPrompt() {
   var passLength = prompt(
     "Password Generator: Please choose a password length between 8-128 characters"
   );
@@ -73,8 +83,6 @@ function lengthPrompt() {
     );
   }
 
-  console.log(passLength);
-
   if (
     conLower == false &&
     conUpper == false &&
@@ -83,35 +91,23 @@ function lengthPrompt() {
   ) {
     alert("Please select at least one character attribute!");
     lengthPrompt();
-  } else
-    alert(
-      "Thank you! Click the Generate Pasword button to display your new password"
-    );
+  } else alert("Thank you! Click the Generate Pasword button to display your new password");
   if (conLower == true) {
-    passArray.concat(lower);
+    holdArray = passArray.concat(lower);
   }
   if (conUpper == true) {
-    passArray.concat(lower);
+    holdArray = passArray.concat(lower);
   }
   if (conNumbers == true) {
-    passArray.concat(numbers);
+    holdArray = passArray.concat(numbers);
   }
   if (conChar == true) {
-    passArray.concat(special);
+    holdArray = passArray.concat(special);
   }
   console.log(holdArray);
   console.log(passArray);
-}
+});
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+//When (Generate Button) is clicked...
 
-  passwordText.value = password;
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword); //When (Generate Button) is clicked...
-
-lengthPrompt();
+// lengthPrompt();
