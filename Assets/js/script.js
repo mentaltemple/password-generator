@@ -50,6 +50,12 @@ var special = [
   "=",
   "-",
   "`",
+  "/",
+  "?",
+  ".",
+  ",",
+  "<",
+  ">",
 ];
 // Assignment Code
 var generateBtn = document.querySelector("#generate"); //stores data from id #generate (Generate Password" button) into the object "generateBtn"
@@ -107,7 +113,3 @@ generateBtn.addEventListener("click", function lengthPrompt() {
   console.log(holdArray);
   console.log(passArray);
 });
-
-//When (Generate Button) is clicked...
-
-// lengthPrompt();
