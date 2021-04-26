@@ -4,9 +4,8 @@
 
 - My motivation behind this project was to deepen my understanding of JavaScript by building a functional web app.
 - I built this project because it was a complex puzzle to solve and it provided a lot of learning opportunities for JavaScript.
-- This project allows a user to generate a secure password incorporating lowercase, uppercase, numerical and special characters.
-- I learned a ton about functions, methods, objects, arrays, variables.
-- As of right now, it's not fully functional, but I learned a lot just getting to this point. I hope I can get it fully completed by the time you are reading this.
+- This project allows a user to generate a secure password incorporating their choice of lowercase letters, uppercase letters, numerals and/or special characters.
+- I learned a ton about functions, methods, objects, arrays, variables, for loops, if else statements, booleans, prompts, alerts, and how to randomize an array.
 
 ## Installation
 
@@ -24,4 +23,5 @@ https://www.w3schools.com
 Alex Jurgs
 Lisa Barton
 TJ Courey
-Ben Machock
+Ben Machock (Instructor)
+Zac Stowell (TA)
